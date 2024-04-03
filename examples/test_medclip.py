@@ -35,30 +35,12 @@ train_config = {
 
 """zero-shot classification"""
 def chexpert5200_test():
-    # checkpoint = r"/data2/machong/LM_tools/MedCLIP-main/MedCLIP-main/pretrain_weights/medclip-vit-pretrained/"
-    # checkpoint = r"/data3/machong/proj_save/medclip/checkpoints/vision_text_pretrain/2023_12_18-16_22_09/best/"
 
-    # checkpoint = r"/data3/machong/proj_save/medclip/checkpoints/vision_text_pretrain/2023_12_15-21_43_42/best/"
-    #
-    # # build medclip model
-    # model = MedCLIPModel(vision_cls=MedCLIPVisionModelViT, checkpoint=checkpoint)
-    # model = Hyrachy_MedCLIPModel(vision_cls=Hyrachy_MedCLIPVisionModelViT, checkpoint=checkpoint)
 
     """SPARC + FILIP + Part Gaze"""
-    # checkpoint = r"/data3/machong/proj_save/medclip/checkpoints/vision_text_pretrain/2024_01_14-10_36_53/best/"
-    # checkpoint = r"/data3/machong/proj_save/medclip/checkpoints/vision_text_pretrain/2024_01_25-23_21_46/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_24-17_21_25/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_28-10_26_13/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_27-22_35_28/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_28-11_21_25/best/"
 
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_22-10_45_37/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_23-23_31_08/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_24-17_21_25/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_27-22_35_28/best/"
-    # checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_28-10_26_13/best/"
     checkpoint = r"/data3/machong/project_results/medclip/checkpoints/vision_text_pretrain/2024_02_28-15_20_08/best/"
-    # checkpoint = r"/data3/machong/proj_save/medclip/checkpoints/vision_text_pretrain/2024_01_25-23_21_46/best/"
+
     model = SPARC_FILIP_PartGaze_MedCLIPModel(vision_cls=Hyrachy_MedCLIPVisionModelViT, checkpoint=checkpoint, config=train_config)
 
     """MGCA"""
