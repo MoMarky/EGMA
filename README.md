@@ -1,6 +1,5 @@
 # Eye-gaze Guided Multi-modal Alignment (EGMA) Framework for Radiology
 
-The code of EGMA framework is coming soon:
 
 Chong Ma, Hanqi Jiang, Wenting Chen, Zihao Wu, Xiaowei Yu, Fang Zeng, Lei Guo, Dajiang Zhu, Tuo Zhang, Dinggang Shen, Tianming Liu, Xiang Li
 
